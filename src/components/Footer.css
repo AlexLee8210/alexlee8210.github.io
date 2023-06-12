@@ -1,0 +1,32 @@
+@import "../App.css";
+
+.footer {
+    bottom: 0;
+    background-color: var(--nav-text-color);
+    border-top: 5px solid var(--nav-text-color);
+    color: var(--nav-color);
+    height: var(--nav-height);
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* padding-left: var(--margin-left-val);
+    padding-right: var(--margin-right-val); */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 15%;
+    max-height: 100%;
+    align-content: space-evenly;
+    /* background-color: blue; */
+}
+
+.footer-icon-link {
+    text-decoration: none;
+    color: var(--nav-color);
+}

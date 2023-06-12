@@ -1,0 +1,5 @@
+@import '../App.css';
+
+.page-section {
+    margin-bottom: var(--nav-height);
+}

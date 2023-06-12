@@ -1,0 +1,130 @@
+@import "../App.css";
+
+:root {
+    background: var(--background-color);
+    --nav-text-color: #1B1212;
+    --nav-color: #ffffff;
+    --nav-underline-color: linear-gradient(90deg, rgba(62,0,178,1) 0%, rgba(0,117,255,1) 100%);
+}
+
+.navbar {
+    background: var(--nav-color);
+    height: var(--nav-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 1.5px solid var(--nav-text-color);
+    padding-left: 0%;
+    
+    /* Gradient Underline Border */
+    /* border-width: 2px;
+    border-style: solid;
+    border-image-source: var(--nav-underline-color);
+    border-image-slice: 1;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0; */
+}
+  
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    /* padding: 10%; */
+    padding-left: var(--margin-left-val);
+    padding-right: var(--margin-right-val);
+}
+
+.navbar-logo {
+    color: var(--nav-text-color);
+    display: flex;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-logo::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Setting different color than
+       that of original text  */
+    color: green;
+
+    /* Setting width to 0*/
+    width: 0%;
+    transition: 1s;
+}
+
+.navbar-logo:hover::before {
+    width: 100%;
+}
+  
+.nav-item {
+    width: 100%;
+}
+
+.nav-links {
+    position: relative;
+    color: var(--nav-text-color);
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    /* margin-left: 10px; */
+}
+  
+.nav-links:hover {
+    color: var(--nav-text-color);
+}
+  
+.nav-links::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--nav-underline-color);
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+  
+.nav-links:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 50px;
+    list-style: none;
+    text-align: center;
+    width: 75vw;
+    justify-content: end;
+}
+
+.fa-bars {
+    color: var(--nav-text-color);
+}
+  
+.nav-links-mobile {
+    display: none;
+}
+  
+.menu-icon {
+    display: none;
+}
