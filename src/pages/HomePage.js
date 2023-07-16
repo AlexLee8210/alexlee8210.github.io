@@ -97,7 +97,7 @@ function HomePage() {
                     <hr />
                 </div>
                 <PageSection className='fade-in-section'>
-                    poopoo
+                    Projects
                 </PageSection>
             </div>
             <div>
