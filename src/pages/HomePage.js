@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 import PageSection from './PageSection';
+import ExperienceSection from './ExperienceSection';
 
 function reveal() {
     var reveals = document.querySelectorAll(".fade-in-section");
@@ -22,10 +23,14 @@ function HomePage() {
     reveal();
     return (
         <div className="page-container">
-            <h1 className='title-text'>
-                {/* Hi, I'm <br/> */}
-                Alexander Lee
-            </h1>
+            <div className='title-container'>
+                <h1 className='title-text'>
+                    {/* Hi, I'm <br/> */}
+                    <span>
+                    Alexander Lee
+                    </span>
+                </h1>
+            </div>
             <div>
                 <div className='fade-in-section'>
                     <h2 className='header-text' id='about'>
@@ -49,16 +54,39 @@ function HomePage() {
                     </h2>
                     <hr />
                 </div>
-                <PageSection className='fade-in-section'>
-                    <h3 className='internship'>
-                        Arion Blue LLC. 
-                    </h3>
-                    <h3 className='internship-title'>
-                        Software Engineer Intern
-                    </h3>
-                    <p>
-
-                    </p>
+                <PageSection>
+                    <ExperienceSection className='fade-in-section' name='R1649' location='Katy, TX (Remote)' title='Software Engineer Intern' dates='June 2023 - Present'>
+                        <ul>
+                            <li>
+                                Collaborate with a team of designers and developers to translate wireframes and mockups into fully functional React components
+                            </li>
+                            <li>
+                                Utilize React components, hooks, and state management to build interactive and dynamic user interfaces
+                            </li>
+                            <li>
+                                Integrate routing and navigation using React Router to create a seamless user experience across multiple pages
+                            </li>
+                            <li>
+                                Incorporated version control using Git and collaborated with team members using platforms like GitHub for efficient code management and collaboration
+                            </li>
+                        </ul>
+                    </ExperienceSection>
+                    <ExperienceSection className='fade-in-section' name='Arion Blue LLC.' location='Houston, TX' title='Software Engineer Intern' dates='Jan 2022 - May 2022'>
+                        <ul>
+                            <li>
+                                Designed and integrated read features, allowing seamless retrieval and display of data from the SQL database in a user-friendly manner
+                            </li>
+                            <li>
+                                Employed advanced debugging techniques within Chrome Developer Tools to diagnose and fix issues, improving website functionality
+                            </li>
+                            <li>
+                                Developed a robust Django-based website that enables efficient searching and retrieval of employee records
+                            </li>
+                            <li>
+                                Utilized design software to create a cohesive set of scalable vector icons for engineering-related topics
+                            </li>
+                        </ul>
+                    </ExperienceSection>
                 </PageSection>
             </div>
             <div>

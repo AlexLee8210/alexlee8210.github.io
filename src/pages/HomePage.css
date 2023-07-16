@@ -9,8 +9,32 @@
     /* overflow-y: scroll; */
 }
 
+.title-container {
+    height: 100vh;
+    /* background-color: blue; */
+}
+
+.title-container span {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .title-container {
+        height: 100%;
+    }
+
+    .title-container span {
+        position: relative;
+    }
+
+    p, li {
+        font-size: 3vw;
+    }
+}
+
 .title-text {
-    font-size: 9rem;
+    font-size: 10vw;
     animation: fadeIn 1.8s;
 }
 
@@ -20,7 +44,7 @@
 }
 
 .header-text {
-    font-size: 5rem;
+    font-size: 5vw;
     margin-bottom: 0;
 }
 
@@ -45,14 +69,3 @@ hr {
     opacity: 50%;
 }
 
-.internship {
-    margin-bottom: 0px;
-}
-
-.internship-title {
-    color: #555555;
-    font-style: italic;
-    margin: 0px;
-    font-size: 1em;
-    opacity: 80%;
-}

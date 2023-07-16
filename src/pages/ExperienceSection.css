@@ -1,0 +1,42 @@
+
+.name {
+    margin-bottom: auto;
+}
+
+.subheader {
+    margin: 0px;
+}
+
+.title {
+    font-style: italic; 
+    font-size: 1rem;
+    opacity: 50%;
+}
+
+.dates {
+    font-size: 1rem;
+    float: right;
+}
+
+.location {
+    font-size: 1rem;
+    float: right;
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        font-style: italic; 
+        font-size: 3.5vw;
+        opacity: 50%;
+    }
+    
+    .dates {
+        font-size: 3.5vw;
+        float: right;
+    }
+    
+    .location {
+        font-size: 3.5vw;
+        float: right;
+    }
+}
