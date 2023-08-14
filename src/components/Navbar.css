@@ -43,6 +43,16 @@
     /* background-color: blue; */
 }
 
+.navbar-logo-text {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-size: 2rem;
+    align-items: center;
+    white-space: nowrap;
+    /* width: 100%; */
+    /* background-color: blue; */
+}
+
 /* .navbar-logo::before {
     position: absolute;
     top: 0;
@@ -104,16 +114,39 @@
 }
 
 @media screen and (max-width: 900px) {
+    .navbar {
+        background: var(--nav-color);
+        height: var(--nav-height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        max-width: 100%;
+        padding-left: var(--margin-left-val);
+        padding-right: var(--margin-right-val);
+    }
+
     .nav-menu {
+        position: absolute;
         display: flex;
         flex-direction: column;
-        max-width: 90%;
+        justify-content: start;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         position: absolute;
-        top: 80px;
+        top: var(--nav-height);
+        margin: 0;
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
-        padding: 0 5%;
+        /* padding: 0 5%; */
+        height: calc(100vh - var(--nav-height));
+        padding-top: 20px;
+        border-top: 1px solid #000;
     }
     .active {
         background: #fff;
@@ -137,6 +170,16 @@
         justify-self: flex-end;
         /* width: 100%; */
         /* align-self: flex-end; */
+    }
+
+    .nav-links {
+        position: relative;
+        color: var(--nav-text-color);
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        width: fit-content;
+        /* margin-left: 10px; */
     }
 }
 

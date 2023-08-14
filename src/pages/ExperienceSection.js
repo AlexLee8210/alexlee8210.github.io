@@ -1,6 +1,6 @@
 import './ExperienceSection.css';
 
-function ExperienceSection({ className, name, location, title, dates, children}) {
+function ExperienceSection({ className, name, location, title, dates, children }) {
     return (
         <div className={className}>
 

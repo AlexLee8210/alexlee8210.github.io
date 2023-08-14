@@ -21,7 +21,7 @@ function Navbar() {
     window.addEventListener('resize', showMenu)
     const location = useLocation();
     useEffect(() => {
-    showMenu();
+        showMenu();
         if (location.hash) {
             let elem = document.getElementById(location.hash.slice(1))
             if (elem) {
@@ -33,6 +33,7 @@ function Navbar() {
     }, [location, ]);
 
     return (
+        <>
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className='navbar-logo'>
@@ -69,6 +70,7 @@ function Navbar() {
                 </ul>
             </div>
         </nav>
+        </>
     );
 }
 
