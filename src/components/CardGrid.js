@@ -61,10 +61,13 @@ function CardGrid({className}) {
             </Card>
             <Card title='Greater - QWELL' className='hide-card'
                 image='https://www.austinoutpost.org/wp-content/uploads/2022/02/QWELL-Greater-Than_300.jpg'
-                link='https://github.com/Naman-Arora/Qwell'>
+                link='https://austinoutpost.org'>
                 <p>
                     Worked on Greater, a React Native Mobile Applciation for QWELL
-                    as a Tech Member in Convergent - Forge.
+                    as a Tech Member in&nbsp;
+                    <a href='https://www.txconvergent.org/forge' target='_blank'>
+                        Convergent - Forge
+                    </a>.
                 </p>
             </Card>
         </div>
