@@ -43,7 +43,7 @@ function CardGrid({className}) {
 
     return (
         <div className='card-grid' ref={ref}>
-            <Card title='Zenith Math' className='hide-card' image={process.env.PUBLIC_URL + '/zenith-preview.png'}
+            <Card title='Zenith Math' className='hide-card' image={process.env.PUBLIC_URL + '/app_icon_Z.png'}
                 link='https://apps.apple.com/tt/app/zenith-math/id1561490083'>
                 <p>
                     Mental math app I created with my friends in high school.
@@ -59,11 +59,14 @@ function CardGrid({className}) {
                     Flutter Application I made while learning this about this framework.
                 </p>
             </Card>
-            {/* <Card title='b' className='hide-card' image={process.env.PUBLIC_URL + '/SiteIcon.png'}>
+            <Card title='Greater - QWELL' className='hide-card'
+                image='https://www.austinoutpost.org/wp-content/uploads/2022/02/QWELL-Greater-Than_300.jpg'
+                link='https://github.com/Naman-Arora/Qwell'>
                 <p>
-                    Mental math app.
+                    Worked on Greater, a React Native Mobile Applciation for QWELL
+                    as a Tech Member in Convergent - Forge.
                 </p>
-            </Card> */}
+            </Card>
         </div>
     );
 }
