@@ -13,19 +13,19 @@ function reveal(className, anim) {
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add(anim);
             if (i == reveals.length) {
-                window.removeEventListener("scroll", reveal);
+                window.removeEventListener('scroll', reveal);
             }
         }
     }
 }
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
 function hackerEffect() {
     let elem = document.getElementById('hacker-effect');
     let iterations = 0;
     const interval = setInterval(() => {
-        elem.textContent = elem .textContent.split("")
+        elem.textContent = elem.textContent.split('')
             .map((letter, index) => {
                 if (index < iterations) {
                     return elem.dataset.value[index];
@@ -38,7 +38,7 @@ function hackerEffect() {
                 }
                 return letters[Math.floor(Math.random() * 26)];
             })
-            .join("");
+            .join('');
         iterations += 1;
         if (iterations > elem.dataset.value.length) {
             clearInterval(interval);
@@ -49,12 +49,12 @@ function hackerEffect() {
 function HomePage() {
 
     window.onload = hackerEffect;
-    window.addEventListener("scroll", () => reveal('.fade-in-section', 'active'));
+    window.addEventListener('scroll', () => reveal('.fade-in-section', 'active'));
 
-    window.addEventListener("DOMContentLoaded", () => reveal('.fade-in-section'));
+    window.addEventListener('DOMContentLoaded', () => reveal('.fade-in-section'));
 
     return (
-        <div className="page-container">
+        <div className='page-container'>
             <div className='title-container'>
                 <h1 className='title-text' >
                     <span 
@@ -74,10 +74,10 @@ function HomePage() {
                 </div>
                 <PageSection className='fade-in-section'>
                     <p>
-                        {/* I have a strong background with Java and Python, as well as proficiency in C#, C, JavaScript, HTML, CSS, Dart, and 64-bit ARM assembly. */}
-                        I am currently an undergraduate student at the University of Texas at Austin, where I am pursuing my Bachelor's Degree in Computer Science and a minor in Business. 
-                        I have developed apps and websites using various frameworks such as Xamarin Forms, React, and Flutter, and I am excited to continue creating more in the future. 
-                        In my free time, I enjoy working on personal coding projects as well as playing volleyball and working out.
+                        I am currently an undergraduate student at the University of Texas at Austin, where I am pursuing my Bachelor's Degree in Computer Science and a minor in Business.
+                        I have a strong background with Java, Python, and C/C++, and I have also used various other languages including JavaScript, HTML/CSS, C#, and SQL. 
+                        I have developed apps and websites using various frameworks such as Xamarin.Forms, React, and Flutter, and I am excited to continue creating more in the future. 
+                        In my free time, I enjoy working on personal coding projects as well as playing volleyball and working out. 
                     </p>
                 </PageSection>
             </div>
@@ -150,7 +150,13 @@ function HomePage() {
                     <hr />
                 </div>
                 <PageSection className='fade-in-section'>
-                    <b>Email</b>: reach.alexander.lee@gmail.com <br/>
+                    <b>Email</b>:&nbsp;
+                        <a href="mailto:alexander.lee@utexas.edu"
+                            rel='noreferrer'
+                            target='_blank'
+                        >
+                        alexander.lee@utexas.edu</a> 
+                    <br/>
                     <b>Number</b>: +1 (346) 843-9466 <br/>
                 </PageSection>
             </div>

@@ -1,5 +1,5 @@
 
-import { useState, useRef, useEffect} from "react"; 
+import { useState, useRef, useEffect} from 'react'; 
 import Card from './Card';
 import './CardGrid.css';
 
@@ -12,7 +12,7 @@ function CardGrid({className}) {
             ([entry]) => {
                 setIsIntersecting(entry.isIntersecting);
             },
-            { rootMargin: "-150px" }
+            { rootMargin: '-150px' }
         );
         observer.observe(ref.current);
     
@@ -21,8 +21,8 @@ function CardGrid({className}) {
     
     useEffect(() => {
         if (isIntersecting) {
-            ref.current.querySelectorAll(".card-wrapper").forEach((el) => {
-                el.classList.add("card-anim");
+            ref.current.querySelectorAll('.card-wrapper').forEach((el) => {
+                el.classList.add('card-anim');
             });
         }
     }, [isIntersecting]);
@@ -65,7 +65,9 @@ function CardGrid({className}) {
                 <p>
                     Worked on Greater, a React Native Mobile Applciation for QWELL
                     as a Tech Member in&nbsp;
-                    <a href='https://www.txconvergent.org/forge' target='_blank'>
+                    <a href='https://www.txconvergent.org/forge' target='_blank'
+                        rel='noreferrer'
+                    >
                         Convergent - Forge
                     </a>.
                 </p>
