@@ -82,6 +82,38 @@ function HomePage() {
                 </PageSection>
             </div>
             <div>
+                <h2 className='header-text' id='education'>
+                    <div className='fade-in-section'>
+                        Education
+                    </div>
+                </h2>
+                <div className='fade-in-section'>
+                    <hr />
+                </div>
+                <PageSection>
+                    <ExperienceSection className='fade-in-section' name='University of Texas at Austin' location='Austin, TX' title='BS Computer Science' dates='Aug 2022 - Present (Expected Graduation: May 2025/26)'>
+                        <p>
+                            GPA: <b>3.83</b><br/>
+                            Relevant Coursework:
+                            <ul>
+                                <li>
+                                    Fall 2022: &emsp;&emsp;&nbsp;<b>Data Structures</b>, Discrete Math
+                                </li>
+                                <li>
+                                    Spring 2023: &ensp;&nbsp;<b>Computer Architecture</b>, Linear Algebra
+                                </li>
+                                <li>
+                                    Fall 2023: &emsp;&emsp;&nbsp;<b>Operating Systems</b>, MIS, Competitive Programming
+                                </li>
+                                <li>
+                                    Spring 2024: &ensp;&nbsp;<u>Software Engineering</u>, <u>Principles of Machine Learning</u>, Differential Equations
+                                </li>
+                            </ul>
+                        </p>
+                    </ExperienceSection>
+                </PageSection>
+            </div>
+            <div>
                 <h2 className='header-text' id='experience'>
                     <div className='fade-in-section'>
                         Experience
@@ -93,7 +125,7 @@ function HomePage() {
                 {/* <div className='fade-in-section'>
                 </div> */}
                 <PageSection>
-                    <ExperienceSection className='fade-in-section' name='R1649' location='Katy, TX (Remote)' title='Software Engineer Intern' dates='June 2023 - Present'>
+                    <ExperienceSection className='fade-in-section' name='R1649' location='Remote' title='Software Engineer Intern' dates='June 2023 - Present'>
                         <ul>
                             <li>
                                 Collaborate with a team of designers and developers to translate wireframes and mockups into fully functional React components

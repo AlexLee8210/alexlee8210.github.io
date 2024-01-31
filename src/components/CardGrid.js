@@ -56,7 +56,7 @@ function CardGrid({className}) {
                 image='https://i2.wp.com/softwareengineeringdaily.com/wp-content/uploads/2018/10/flutter.jpg?fit=1570%2C1500&ssl=1'
                 link='https://github.com/AlexLee8210/tic_tac_toe'>
                 <p>
-                    Flutter Application I made while learning this about this framework.
+                    Flutter Application I made while learning about this framework.
                 </p>
             </Card>
             <Card title='Greater - QWELL' className='hide-card'

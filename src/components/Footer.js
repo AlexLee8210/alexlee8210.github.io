@@ -18,12 +18,12 @@ function Footer() {
                 >
                     <i class="fa-brands fa-github fa-2xl"></i>
                 </a>
-                <a href='https://www.instagram.com/arex_reee/'
+                <a href='https://medium.com/@alexlee8210'
                     target='_blank'
                     rel='noreferrer'
                     className='footer-icon-link'
                 >
-                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-medium fa-2xl"></i>
                 </a>
             </div>
         </div>
