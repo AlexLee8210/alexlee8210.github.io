@@ -9,20 +9,12 @@
     justify-items: center;
     /* opacity: 0; */
     margin-top: 20px;
-    height: 450px
+    /* height: 450px */
 }
 
 .card-anim {
     /* opacity: 0; */
 	animation: fadeIn 1s ease-in-out both;
-}
-
-.card-anim:nth-child(2) {
-	animation-delay: 0.3s;
-}
-
-.card-anim:nth-child(3) {
-	animation-delay: 0.6s;
 }
 
 @keyframes fadeIn {

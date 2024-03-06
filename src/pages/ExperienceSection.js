@@ -1,4 +1,4 @@
-import './ExperienceSection.css';
+import '../styles/ExperienceSection.css';
 
 function ExperienceSection({ className, name, location, title, dates, children }) {
     return (

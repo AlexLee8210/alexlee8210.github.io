@@ -1,5 +1,5 @@
-import './PageSection.css';
-import '../App.css';
+import '../styles/PageSection.css';
+import '../styles/App.css';
 
 function PageSection({className, children}) {
     return (

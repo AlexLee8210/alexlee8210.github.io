@@ -1,4 +1,4 @@
-@import "../App.css";
+@import "../styles/App.css";
 
 :root {
     background: var(--background-color);
@@ -133,7 +133,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: flex-start;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;

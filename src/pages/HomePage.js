@@ -1,23 +1,8 @@
-import React from 'react';
-import './HomePage.css';
+import { React, useEffect } from 'react';
+import '../styles/HomePage.css';
 import PageSection from './PageSection';
 import ExperienceSection from './ExperienceSection';
 import CardGrid from '../components/CardGrid';
-
-function reveal(className, anim) {
-    var reveals = document.querySelectorAll(className);
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = reveals[i].getBoundingClientRect().height;
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add(anim);
-            if (i == reveals.length) {
-                window.removeEventListener('scroll', reveal);
-            }
-        }
-    }
-}
 
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
@@ -49,9 +34,25 @@ function hackerEffect() {
 function HomePage() {
 
     window.onload = hackerEffect;
-    window.addEventListener('scroll', () => reveal('.fade-in-section', 'active'));
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { root: null, rootMargin: '0px', threshold: 0.1 });
 
-    window.addEventListener('DOMContentLoaded', () => reveal('.fade-in-section'));
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
 
     return (
         <div className='page-container'>

@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import './Card.css';
+import '../styles/Card.css';
 
 function Card({title, image, children, className, link}) {
 
@@ -11,7 +10,7 @@ function Card({title, image, children, className, link}) {
             >
                 <div className='card'>
                     {/* <div className='card-img-wrapper'> */}
-                        <img className='card-image' src={image} />
+                        <img className='card-image' src={image} alt='card'/>
                     {/* </div> */}
                     <div className="card-content">
                         <h1>
