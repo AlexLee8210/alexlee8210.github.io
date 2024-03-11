@@ -77,8 +77,8 @@ function HomePage() {
                     <p>
                         I am currently an undergraduate student at the University of Texas at Austin, where I am pursuing my Bachelor's Degree in Computer Science and a minor in Business.
                         I have a strong background with Java, Python, and C/C++, and I have also used various other languages including JavaScript, HTML/CSS, C#, and SQL. 
-                        I have developed apps and websites using various frameworks such as Xamarin.Forms, React, and Flutter, and I am excited to continue creating more in the future. 
-                        In my free time, I enjoy working on personal coding projects as well as playing volleyball and working out. 
+                        I have developed apps and websites using various frameworks such as .NET, React, and Flutter, and I am excited to continue creating more in the future. 
+                        In my free time, I enjoy working on personal coding projects as well as playing volleyball, working out, and cooking. 
                     </p>
                 </PageSection>
             </div>
@@ -92,7 +92,7 @@ function HomePage() {
                     <hr />
                 </div>
                 <PageSection>
-                    <ExperienceSection className='fade-in-section' name='University of Texas at Austin' location='Austin, TX' title='BS Computer Science' dates='Aug 2022 - Present (Expected Graduation: May 2025/26)'>
+                    <ExperienceSection className='fade-in-section' name='University of Texas at Austin' location='Austin, TX' title='BS Computer Science' dates='Aug 2022 - Present'>
                         <p>
                             GPA: <b>3.83</b><br/>
                             Relevant Coursework:
@@ -107,7 +107,7 @@ function HomePage() {
                                     Fall 2023: &emsp;&emsp;&nbsp;<b>Operating Systems</b>, MIS, Competitive Programming
                                 </li>
                                 <li>
-                                    Spring 2024: &ensp;&nbsp;<u>Software Engineering</u>, <u>Principles of Machine Learning</u>, Differential Equations
+                                    Spring 2024: &ensp;&nbsp;<b>Software Engineering</b>, <b>Principles of Machine Learning</b>, Differential Equations
                                 </li>
                             </ul>
                         </p>
