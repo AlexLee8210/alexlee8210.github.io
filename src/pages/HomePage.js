@@ -91,7 +91,13 @@ function HomePage() {
                     <hr />
                 </div>
                 <PageSection>
-                    <ExperienceSection className='fade-in-section' name='University of Texas at Austin' location='Austin, TX' title='BS Computer Science' dates='Aug 2022 - Present'>
+                    <ExperienceSection
+                        className='fade-in-section'
+                        name='University of Texas at Austin'
+                        location='Austin, TX'
+                        title='BS Computer Science and Mathematics, Minor in Business'
+                        dates='Aug 2022 - Present'
+                    >
                         <p>
                             GPA: <b>3.83</b><br/>
                             Relevant Coursework:
