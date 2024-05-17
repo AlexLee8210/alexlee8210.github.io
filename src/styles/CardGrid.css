@@ -1,6 +1,7 @@
 .card-grid {
     display: grid;
     grid-template-columns: auto auto auto;
+    /* grid-template-rows: max-content; */
     /* column-gap: 10px; */
     width: 100%;
     align-items: center;

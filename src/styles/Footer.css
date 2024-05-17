@@ -29,4 +29,11 @@
 .footer-icon-link {
     text-decoration: none;
     color: var(--nav-color);
+    /* transition: all ease-in 200ms; */
+    transition: 200ms;
+    margin: auto;
+}
+
+.footer-icon-link:hover {
+    transform: scale(1.1);
 }

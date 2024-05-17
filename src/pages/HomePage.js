@@ -58,8 +58,7 @@ function HomePage() {
         <div className='page-container'>
             <div className='title-container'>
                 <h1 className='title-text' >
-                    <span 
-                    id='hacker-effect' data-value='Alexander Lee'>
+                    <span id='hacker-effect' data-value='Alexander Lee'>
                     Alexander Lee
                     </span>
                 </h1>
@@ -126,7 +125,7 @@ function HomePage() {
                 {/* <div className='fade-in-section'>
                 </div> */}
                 <PageSection>
-                    <ExperienceSection className='fade-in-section' name='R1649' location='Remote' title='Software Engineer Intern' dates='June 2023 - Present'>
+                    <ExperienceSection className='fade-in-section' name='R1649' location='Remote' title='Software Engineer Intern' dates='June 2023 - May 2024'>
                         <ul>
                             <li>
                                 Collaborate with a team of designers and developers to translate wireframes and mockups into fully functional React components

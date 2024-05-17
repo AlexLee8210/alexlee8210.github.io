@@ -32,12 +32,15 @@ function CardGrid({className}) {
 
     return (
         <div className='card-grid' ref={ref}>
-            {PROJECT_DATA.map((project) => (
-                <Card 
+            {PROJECT_DATA.map((project, index) => (
+                <Card
+                    key={index}
                     title={project.title} 
                     className='hide-card'
                     image={project.image_url}
-                    link={project.link}>
+                    link={project.link}
+                    tags={project.tags}
+                    tagLinks={project.tag_links}>
                     <p dangerouslySetInnerHTML={{ __html: project.description }}/>
                 </Card>
             ))}

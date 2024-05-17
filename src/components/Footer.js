@@ -9,21 +9,21 @@ function Footer() {
                     rel='noreferrer'
                     className='footer-icon-link'
                 >
-                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    <i className="fa-brands fa-linkedin fa-2xl icon-anim"></i>
                 </a>
                 <a href='https://github.com/AlexLee8210'
                     target='_blank'
                     rel='noreferrer'
                     className='footer-icon-link'
                 >
-                    <i class="fa-brands fa-github fa-2xl"></i>
+                    <i className="fa-brands fa-github fa-2xl"></i>
                 </a>
                 <a href='https://medium.com/@alexlee8210'
                     target='_blank'
                     rel='noreferrer'
                     className='footer-icon-link'
                 >
-                    <i class="fa-brands fa-medium fa-2xl"></i>
+                    <i className="fa-brands fa-medium fa-2xl"></i>
                 </a>
             </div>
         </div>

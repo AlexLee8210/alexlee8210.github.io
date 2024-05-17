@@ -1,6 +1,6 @@
 import '../styles/Card.css';
 
-function Card({title, image, children, className, link}) {
+function Card({title, tags, tagLinks, image, children, className, link}) {
 
     return (
         <div className={`${className} + card-wrapper`}>
@@ -9,9 +9,7 @@ function Card({title, image, children, className, link}) {
                 className='card-link'
             >
                 <div className='card'>
-                    {/* <div className='card-img-wrapper'> */}
-                        <img className='card-image' src={image} alt='card'/>
-                    {/* </div> */}
+                    <img className='card-image' src={image} alt='card'/>
                     <div className="card-content">
                         <h1>
                             {title}
@@ -19,6 +17,20 @@ function Card({title, image, children, className, link}) {
                         <p className='card-info'>
                             {children}
                         </p>
+                    </div>
+                    
+                    <div className='tag-container'>
+                        {
+                            tags.map((tag, index) => {
+                                const linked = tagLinks && tagLinks[tag];
+                                const tagLinked = linked ? <a className='tag-link' href={tagLinks[tag]} target="_blank" rel="noreferrer">{tag}</a> : tag;
+                                return (
+                                    <div key={index} className={`tag-content ${linked ? 'linked' : ''}`}>
+                                        {tagLinked}
+                                    </div>
+                                );
+                            })
+                        }
                     </div>
                 </div>
             </a>
