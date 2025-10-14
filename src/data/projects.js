@@ -72,7 +72,7 @@ const PROJECT_DATA = [
         },
         "image_url": process.env.PUBLIC_URL + "Cura Logo.png",
         "link": "https://www.txconvergent.org/forge",
-        "description": "A mobile application for providing treatment plans to patients, as a Tech Member in Convergent (Forge)."
+        "description": "A mobile application for providing treatment plans to patients, as a Tech Member in Convergent."
     },
 ]
 

@@ -99,20 +99,29 @@ function HomePage() {
                         dates='Aug 2022 - Present'
                     >
                         <p>
-                            GPA: <b>3.83</b><br/>
+                            GPA: <b>3.92</b><br/>
                             Relevant Coursework:
                             <ul>
                                 <li>
-                                    Fall 2022: &emsp;&emsp;&nbsp;<b>Data Structures</b>, Discrete Math
+                                    Fall 2025: &ensp;&nbsp;<b>Compilers</b>, <b>Computer Networks</b>
                                 </li>
                                 <li>
-                                    Spring 2023: &ensp;&nbsp;<b>Computer Architecture</b>, Linear Algebra
+                                    Spring 2025: &ensp;&nbsp;<b>Distributed Computing</b>, <b>Algorithms & Complexity</b>
+                                </li>
+                                <li>
+                                    Fall 2025: &ensp;&nbsp;<b>Cloud Computing</b>, <b>Object-Oriented Programming</b>, Number Theory
+                                </li>
+                                <li>
+                                    Spring 2024: &ensp;&nbsp;<b>Software Engineering</b>, <b>Principles of Machine Learning</b>, Differential Equations
                                 </li>
                                 <li>
                                     Fall 2023: &emsp;&emsp;&nbsp;<b>Operating Systems</b>, MIS, Competitive Programming
                                 </li>
                                 <li>
-                                    Spring 2024: &ensp;&nbsp;<b>Software Engineering</b>, <b>Principles of Machine Learning</b>, Differential Equations
+                                    Spring 2023: &ensp;&nbsp;<b>Computer Architecture</b>, Linear Algebra
+                                </li>
+                                <li>
+                                    Fall 2022: &emsp;&emsp;&nbsp;<b>Data Structures</b>, Discrete Math
                                 </li>
                             </ul>
                         </p>
@@ -131,35 +140,97 @@ function HomePage() {
                 {/* <div className='fade-in-section'>
                 </div> */}
                 <PageSection>
-                    <ExperienceSection className='fade-in-section' name='R1649' location='Remote' title='Software Engineer Intern' dates='June 2023 - May 2024'>
+                    <ExperienceSection
+                        className='fade-in-section'
+                        name='Amazon Web Services'
+                        location='Seattle, WA'
+                        title='Software Development Engineer Intern'
+                        dates='May 2025 - Aug 2025'
+                    >
                         <ul>
                             <li>
-                                Collaborate with a team of designers and developers to translate wireframes and mockups into fully functional React components
+                                Designed and implemented a relationship management system for analytics metrics using PySpark
                             </li>
                             <li>
-                                Utilize React components, hooks, and state management to build interactive and dynamic user interfaces
+                                Architected a centralized historical stability framework with Apache Iceberg and AWS Glue, eliminating redundant dataset-level tooling and saving ~100 engineering hours per quarter
                             </li>
                             <li>
-                                Integrate routing and navigation using React Router to create a seamless user experience across multiple pages
+                                Enabled metric backfilling, reducing compute costs by ~70% and saving 1000+ DPU-hours monthly
                             </li>
                             <li>
-                                Incorporated version control using Git and collaborated with team members using platforms like GitHub for efficient code management and collaboration
+                                Built and maintained a DynamoDB table with AWS CDK and sweepers to store and manage metric relationships
                             </li>
                         </ul>
                     </ExperienceSection>
-                    <ExperienceSection className='fade-in-section' name='Arion Blue LLC.' location='Houston, TX' title='Software Engineer Intern' dates='Jan 2022 - May 2022'>
+                    <ExperienceSection
+                        className='fade-in-section'
+                        name='SoundBite'
+                        location='Remote'
+                        title='Software Engineer Intern'
+                        dates='May 2024 - Aug 2024'
+                    >
                         <ul>
                             <li>
-                                Designed and integrated read features, allowing seamless retrieval and display of data from the SQL database in a user-friendly manner
+                                Transcribed and vectorized over 20,000 podcast episodes using OpenAI’s Whisper and stored embeddings in a Pinecone database
                             </li>
                             <li>
-                                Employed advanced debugging techniques within Chrome Developer Tools to diagnose and fix issues, improving website functionality
+                                Leveraged the NVIDIA CUDA toolkit and parallel processing for ML models, achieving a 24× speedup in distributed computation
                             </li>
                             <li>
-                                Developed a robust Django-based website that enables efficient searching and retrieval of employee records
+                                Integrated REST and GraphQL APIs with Google Cloud, Dropbox, PodChaser, and Spotify to deliver dynamic podcast content
                             </li>
                             <li>
-                                Utilized design software to create a cohesive set of scalable vector icons for engineering-related topics
+                                Designed secure authentication flows using Google OAuth2, bearer tokens, and session cookies
+                            </li>
+                            <li>
+                                Utilized React hooks, state management, and Tailwind CSS to build interactive UIs in Next.js
+                            </li>
+                            <li>
+                                Automated batch cloud job submission and monitoring with Bash scripts on Linux
+                            </li>
+                        </ul>
+                    </ExperienceSection>
+                    <ExperienceSection
+                        className='fade-in-section'
+                        name='R1649 Equity Partners'
+                        location='Remote'
+                        title='Software Engineer Intern'
+                        dates='June 2023 - May 2024'
+                    >
+                        <ul>
+                            <li>
+                                Translated design wireframes into reusable React components, improving development collaboration
+                            </li>
+                            <li>
+                                Implemented React Router to enable seamless navigation across multi-page interfaces
+                            </li>
+                            <li>
+                                Used Git and GitHub for version control and code reviews, maintaining clean and modular codebases
+                            </li>
+                            <li>
+                                Contributed to front-end architecture and component reusability for internal dashboards
+                            </li>
+                        </ul>
+                    </ExperienceSection>
+                    <ExperienceSection
+                        className='fade-in-section'
+                        name='Arion Blue LLC.'
+                        location='Houston, TX'
+                        title='Software Engineer Intern'
+                        dates='Jan 2022 - May 2022'
+                    >
+                        <ul>
+                            <li>
+                                Designed and integrated read features for efficient SQL data retrieval and display in a Django web app
+                            </li>
+                            <li>
+                                Debugged and optimized website functionality using Chrome DevTools
+                            </li>
+                            <li>
+                                Developed a Django-based employee record system supporting dynamic search and filtering
+                            </li>
+                            <li>
+                                Created scalable vector icons for engineering-related features to improve UI cohesion
                             </li>
                         </ul>
                     </ExperienceSection>
